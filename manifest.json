@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Smallcase returns",
+  "description": "Smallcase returns Desc",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": "icons/icon.png"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "js/jquery-3.6.3.min.js",
+        "js/content.js"
+      ],
+      "matches": [
+        "https://smallcase.zerodha.com/investments"
+      ]
+    }
+  ],
+  "permissions": [
+    "tabs"
+  ]
+}
