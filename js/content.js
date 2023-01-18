@@ -34,7 +34,7 @@ function addDownloadButton(blob) {
     let mainContainer = document.querySelector(".AllInvestments__investment-summary__1oT6D");
 
     // Append the button to the DOM
-    if (false) {
+    if (mainContainer) {
         mainContainer.appendChild(button);
     } else {
         document.body.insertBefore(button, document.body.firstChild);
